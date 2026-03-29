@@ -1,0 +1,142 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #0A192F;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #64FFDA;
+}
+
+.blauwgrijs {
+  color: #64FFDA;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #64FFDA;
+}
+
+.kleine-foto img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    border: none;
+}
+
+.kleine-foto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grote-foto {
+    height: 240px;
+    background-image:
+        linear-gradient(to bottom, rgba(10, 25, 47, 0) 0%, rgba(10, 25, 47, 0.75) 75%, #0A192F 100%),
+        url(../assets/images/grotefoto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    color: #64FFDA;
+    border: 2px solid #64FFDA;
+    background-color: transparent;
+    padding: 10px 18px;
+}
+
+.btn:hover {
+    background-color: #64FFDA;
+    color: #0A192F;
+}
+
+.contact-footer {
+    background-color: #ffffff;
+    color: #0A192F;
+    padding: 80px 0;
+    margin-top: 150px;
+}
+
+.contact-footer p {
+    margin-bottom: 35px;
+}
+
+.contact-knop {
+    display: inline-block;
+    color: #0A192F;
+    border: 2px solid #0A192F;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-knop:hover {
+    background-color: #0A192F;
+    color: #64FFDA;
+}
+
+.portfolio-pagina {
+  background-color: #0A192F;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.portfolio-pagina h1 {
+  margin-bottom: 40px;
+}
+
+.project-blok {
+  width: 100%;
+}
+
+.project-foto img {
+  height: 140px;
+  width: 100%;
+  border: 2px solid #64FFDA;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-blok h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-detail {
+  background-color: #0A192F;
+  color: #ffffff;
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+.detail-foto img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid #64FFDA;
+  border-radius: 12px;
+  display: block;
+}
+
