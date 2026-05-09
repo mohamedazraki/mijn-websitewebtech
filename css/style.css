@@ -1,131 +1,265 @@
 html, body {
-  box-sizing: border-box;
-  background-color: #0A192F;
+  background-color: #f5f7fa;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  color: #ffffff;
-  height: 100%;
-  width: 100%;
+  color: #111111;
+  min-height: 100%;
 }
 
 a, a:hover {
   text-decoration: none;
-  color: #64FFDA;
+  color: #0A66C2;
 }
 
-.blauwgrijs {
-  color: #64FFDA;
+.navbar,
+.over-mij,
+.portfolio-intro,
+.contact-footer {
+  background-color: #0A192F;
+  color: #ffffff;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff;
-    margin-left: 15px;
-    font-size: 14px;
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 14px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #64FFDA;
+  color: #64FFDA;
 }
 
-.kleine-foto img {
-    width: 260px;
-    height: 320px;
-    object-fit: cover;
-    display: block;
-    border-radius: 16px;
-    border: none;
+.navbar-toggler {
+  border: 1px solid #ffffff;
 }
 
-.kleine-foto {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.grote-foto {
-    height: 240px;
-    background-image:
-        linear-gradient(to bottom, rgba(10, 25, 47, 0) 0%, rgba(10, 25, 47, 0.75) 75%, #0A192F 100%),
-        url(../assets/images/grotefoto.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    margin-bottom: 40px;
+.navbar-toggler-icon {
+  filter: invert(1);
 }
 
 .btn {
-    color: #64FFDA;
-    border: 2px solid #64FFDA;
-    background-color: transparent;
-    padding: 10px 18px;
+  color: #0A66C2;
+  border: 2px solid #0A66C2;
+  background-color: transparent;
+  padding: 10px 18px;
+  border-radius: 8px;
 }
 
-.btn:hover {
-    background-color: #64FFDA;
-    color: #0A192F;
+.btn:hover,
+.contact-knop:hover {
+  background-color: #0A66C2;
+  color: #ffffff;
+  border-color: #0A66C2;
+}
+
+.home-hero {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #eef5ff 100%);
+}
+
+.home-hero .container {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0A192F;
+}
+
+.home-hero h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0A66C2;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.home-hero p,
+.locatie-sectie p,
+.project-blok p,
+.project-detail p {
+  color: #444444;
+  line-height: 1.7;
+}
+
+.intro-tekst {
+  background-color: #e7f1ff;
+  color: #0A66C2;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.hero-knoppen {
+  margin-top: 30px;
+}
+
+.tweede-knop {
+  margin-left: 10px;
+}
+
+.kleine-foto {
+  display: flex;
+  justify-content: center;
+}
+
+.kleine-foto img {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.over-mij,
+.locatie-sectie,
+.portfolio-pagina,
+.portfolio-intro,
+.contact-footer {
+  padding: 70px 0;
+}
+
+.over-mij h2 {
+  color: #ffffff;
+}
+
+.over-mij p,
+.portfolio-intro p,
+.contact-footer p,
+.copyright {
+  color: #dbe4f0;
+}
+
+.vaardigheden-blok,
+.map-blok,
+.project-blok {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.vaardigheden-blok h2 {
+  color: #111111;
+}
+
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.skill-info span {
+  color: #111111;
+}
+
+.skill-balk {
+  height: 10px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-vulling {
+  height: 100%;
+  background-color: #0A66C2;
+  border-radius: 20px;
+}
+
+.windows,
+.powershell {
+  width: 80%;
+}
+
+.linux {
+  width: 70%;
+}
+
+.netwerken {
+  width: 75%;
+}
+
+.cybersecurity {
+  width: 65%;
+}
+
+#map,
+.leaflet-container {
+  height: 320px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.leaflet-tile {
+  max-width: none;
 }
 
 .contact-footer {
-    background-color: #ffffff;
-    color: #0A192F;
-    padding: 80px 0;
-    margin-top: 150px;
-}
-
-.contact-footer p {
-    margin-bottom: 35px;
+  margin-top: 0;
 }
 
 .contact-knop {
-    display: inline-block;
-    color: #0A192F;
-    border: 2px solid #0A192F;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-knop:hover {
-    background-color: #0A192F;
-    color: #64FFDA;
-}
-
-.portfolio-pagina {
-  background-color: #0A192F;
+  display: inline-block;
   color: #ffffff;
-  min-height: 100vh;
-  padding: 60px 0;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
-.portfolio-pagina h1 {
-  margin-bottom: 40px;
+.copyright {
+  margin-top: 35px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.portfolio-intro h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.portfolio-intro p {
+  max-width: 700px;
+  margin-bottom: 0;
 }
 
 .project-blok {
-  width: 100%;
+  height: 100%;
 }
 
 .project-foto img {
   height: 140px;
   width: 100%;
-  border: 2px solid #64FFDA;
   border-radius: 8px;
   margin-bottom: 15px;
   object-fit: cover;
-  display: block;
 }
 
 .project-blok h2 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  color: #0A192F;
 }
 
 .project-detail {
-  background-color: #0A192F;
-  color: #ffffff;
+  background-color: #ffffff;
   padding: 60px 0;
   min-height: 100vh;
 }
@@ -133,10 +267,44 @@ a, a:hover {
 .detail-foto img {
   width: 100%;
   max-width: 500px;
-  height: auto;
-  object-fit: cover;
-  border: 2px solid #64FFDA;
   border-radius: 12px;
-  display: block;
 }
 
+.contact-formulier iframe {
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+span {
+  color: red;
+}
+
+.contact-formulier {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #666666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.map-blok figcaption {
+  text-align: left;
+}
+
+.project-detail ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.project-detail li {
+  margin-bottom: 8px;
+  color: #444444;
+  line-height: 1.6;
+}
