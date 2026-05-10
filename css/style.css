@@ -246,6 +246,6 @@ figcaption {
   line-height: 1.6;
 }
 
-span {
+.form-label span {
   color: red;
 }
