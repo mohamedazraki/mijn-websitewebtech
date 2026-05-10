@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    
-    <link rel="stylesheet" href="css/reset.css"> 
+
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
         defer></script>
@@ -32,7 +32,8 @@
                     <img src="assets/images/Logo.png" class="img-fluid" alt="Logo" width="150">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -73,7 +74,7 @@
                             <p><strong>Telefoon:</strong> +32 4 89 52 70 08</p>
                             <p><strong>Adres:</strong> Lange Lozanastraat 1, 2018 Antwerpen, België</p>
 
-                            <section class="map-blok mt-4">
+                            <section class="map-blok bg-white p-4 rounded shadow-sm mt-4">
                                 <h3 class="h5 mb-3">Locatie</h3>
                                 <figure>
                                     <section id="map" class="rounded w-100" aria-label="Kaart van mijn locatie"></section>
@@ -84,12 +85,13 @@
                     </section>
 
                     <section class="col-12 col-md-6">
-                        <form class="contact-formulier" name="contact" method="POST" data-netlify="true">
+                        <form class="contact-formulier bg-white p-4 rounded shadow-sm" name="contact" method="POST"
+                            data-netlify="true" netlify action="/bedankt.html">
                             <input type="hidden" name="form-name" value="contact">
 
                             <section class="mb-3">
                                 <label for="naam" class="form-label">Naam <span>*</span></label>
-                                <input type="text" class="form-control" id="naam" name="naam" required>
+                                <input type="text" class="form-control" id="naam" name="name" required>
                             </section>
 
                             <section class="mb-3">
@@ -99,7 +101,7 @@
 
                             <section class="mb-3">
                                 <label for="bericht" class="form-label">Bericht <span>*</span></label>
-                                <textarea class="form-control" name="bericht" id="bericht" rows="6" required></textarea>
+                                <textarea class="form-control" id="bericht" name="message" rows="6" required></textarea>
                             </section>
 
                             <button type="submit" class="btn">Verstuur</button>
@@ -110,7 +112,7 @@
         </section>
     </main>
 
-    <footer class="contact-footer">
+    <footer class="contact-footer py-5">
         <section class="container text-center">
             <p>Interesse in mijn profiel of portfolio? Neem dan gerust contact met mij op.</p>
             <a href="contact.html" class="contact-knop">Contact</a>
